@@ -20,5 +20,9 @@ export default {
     chats() {
       return chats
     },
+
+    chat(chat: any, { chatId }: any) {
+      return chats.find(c => c.id === chatId)
+    },
   },
 }
